@@ -53,3 +53,38 @@ target = 5
 print(f"Is {target} present in the list: "
       f"{binary_Search(arr, target, 0, len(arr) - 1)}")
 print(f"index of {target} in the list is: {arr.index(target)}")
+
+
+
+## Reverse a string using recursion
+def reverse_string(s):
+    if len(s)==0:
+        return s
+    return s[-1]+reverse_string(s[:-1])
+
+s="Hello"
+print(f"Reverse of the string is: {reverse_string(s)}")
+
+
+## Calculate x^n recursively
+
+def power(x,n):
+    if n==0:
+        return 1
+    return x*power(x,n-1)
+
+x=4
+n=3
+print(f"{x}^{n} is: {power(x,n)}")
+
+### Calculate factorial
+def fact(n):
+    if n==0:
+        return 1
+    elif n==1:
+        return 1
+    return n*fact(n-1)
+
+n=5
+print(f"Factorial of {n} is: {fact(n)}")
+
