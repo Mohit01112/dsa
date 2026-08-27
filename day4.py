@@ -1,32 +1,32 @@
-# ## 4.1 Write out the code for the earlier sum function
-# def sum_num(arr):
-#     if len(arr)==0:
-#         return 0
-#     print(arr[0])
-#     return arr[0]+sum_num(arr[1:])
+## 4.1 Write out the code for the earlier sum function
+def sum_num(arr):
+    if len(arr)==0:
+        return 0
+    print(arr[0])
+    return arr[0]+sum_num(arr[1:])
 
-# arr=[1,2,3,4,5,6]
-# print(f"sum of the numbers is: {sum_num(arr)}")
-
-
-# ## Write a recursive function to count the number of items in a list.
-# def count_items(arr):
-#     if len(arr)==0:
-#         return 0
-#     return 1+count_items(arr[1:])
-# arr=[1,2,3,4,5,6]
-# print(f"count of the numbers is: {count_items(arr)}")
+arr=[1,2,3,4,5,6]
+print(f"sum of the numbers is: {sum_num(arr)}")
 
 
-# ## Write a recursive function to find the maximum number in a list.
+## Write a recursive function to count the number of items in a list.
+def count_items(arr):
+    if len(arr)==0:
+        return 0
+    return 1+count_items(arr[1:])
+arr=[1,2,3,4,5,6]
+print(f"count of the numbers is: {count_items(arr)}")
 
-# def find_max(arr):
-#     if len(arr)==0:
-#         return 0
-#     return max(arr[0],find_max(arr[1:]))
 
-# arr=[1,2,3,44,5,6]
-# print(f"max of the numbers is: {find_max(arr)}")
+## Write a recursive function to find the maximum number in a list.
+
+def find_max(arr):
+    if len(arr)==0:
+        return 0
+    return max(arr[0],find_max(arr[1:]))
+
+arr=[1,2,3,44,5,6]
+print(f"max of the numbers is: {find_max(arr)}")
 
 ## write a recursive function for the binary search
 
