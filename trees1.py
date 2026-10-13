@@ -10,6 +10,7 @@ def printnames(start_dir):
         dir=search_queue.popleft()
         for file in listdir(dir):
             fullpath=join(dir,file)
+            ## easy to understand
             if isfile(fullpath):
                 print(fullpath)
             else:
